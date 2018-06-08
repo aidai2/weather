@@ -10,30 +10,42 @@ import UIKit
 
 class WeatherTableViewController: UITableViewController {
 
+    var cities = [Weather]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let p = Bundle.main.path(forResource: "weather", ofType: "json") {
+            
+            do {
+                
+                let json = try JSONDecoder().decode([Weather].self, from: Data(contentsOf: URL(fileURLWithPath: p), options: .mappedIfSafe))
+                
+                cities = json
+                
+            } catch {
+             
+            }
+        }
     }
 
-    
-
-    // MARK: - Table view data source
-
-    
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+        return cities.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as! WeatherTableViewCell
+        let city = cities[indexPath.row]
+        cell.cityLabel.text = city.city
+        let temp = city.list[0].main.temp - 273
+        cell.tempLabel.text = "\(temp)"
 
         return cell
     }
 
-
+        
 
 }
+ 

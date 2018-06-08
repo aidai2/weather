@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" textLabel="IL0-g5-vMv" detailTextLabel="5Bs-fT-YdK" imageView="9bd-ER-9lD" style="IBUITableViewCellStyleSubtitle" id="Asc-Vg-CJY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" textLabel="IL0-g5-vMv" detailTextLabel="5Bs-fT-YdK" imageView="9bd-ER-9lD" style="IBUITableViewCellStyleSubtitle" id="Asc-Vg-CJY" customClass="WeatherTableViewCell" customModule="wheather" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Asc-Vg-CJY" id="x8W-85-n98">
@@ -26,25 +27,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IL0-g5-vMv">
-                                            <rect key="frame" x="75" y="5" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="93" y="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Bs-fT-YdK">
-                                            <rect key="frame" x="75" y="25.5" width="44" height="14.5"/>
+                                            <rect key="frame" x="93" y="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="placeholder" id="9bd-ER-9lD">
-                                            <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="clouds" id="9bd-ER-9lD">
+                                            <rect key="frame" x="16" y="0.0" width="62" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityLabel" destination="IL0-g5-vMv" id="tch-d4-F73"/>
+                                    <outlet property="tempLabel" destination="5Bs-fT-YdK" id="XZx-vT-mYm"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -57,6 +62,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4UF-Rq-aRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="160.80000000000001" y="142.57871064467767"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5tU-15-Bj0">
+            <objects>
+                <viewController id="VyY-AZ-TYM" customClass="ViewController" customModule="wheather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bH0-MQ-nn2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geN-vf-hut">
+                                <rect key="frame" x="155.5" y="318" width="64" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.40810783279985907" green="0.17034316961452117" blue="0.53888404187817263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FO-A0-eec">
+                                <rect key="frame" x="150.5" y="259.5" width="75.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.69630393401015223" green="0.48598851618176142" blue="0.64115016375662848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="Iw1-Hu-ZGe">
+                                <rect key="frame" x="61.5" y="413" width="252" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="0hR-Lh-vKa"/>
+                                    <constraint firstAttribute="width" constant="252" id="bl8-xu-pxV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="geN-vf-hut" firstAttribute="centerY" secondItem="bH0-MQ-nn2" secondAttribute="centerY" id="15s-6L-oEr"/>
+                            <constraint firstItem="1FO-A0-eec" firstAttribute="centerX" secondItem="bH0-MQ-nn2" secondAttribute="centerX" id="4fz-PK-hZm"/>
+                            <constraint firstItem="Iw1-Hu-ZGe" firstAttribute="centerX" secondItem="bH0-MQ-nn2" secondAttribute="centerX" id="OGy-xb-eXT"/>
+                            <constraint firstItem="geN-vf-hut" firstAttribute="centerX" secondItem="bH0-MQ-nn2" secondAttribute="centerX" id="dAZ-Xf-eV1"/>
+                            <constraint firstItem="geN-vf-hut" firstAttribute="top" secondItem="1FO-A0-eec" secondAttribute="bottom" constant="20" id="gAA-Ig-vr9"/>
+                            <constraint firstItem="G5G-Vp-Vh1" firstAttribute="bottom" secondItem="Iw1-Hu-ZGe" secondAttribute="bottom" constant="80" id="nhb-i5-9MW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G5G-Vp-Vh1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZY-kb-rB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.60000000000002" y="142.57871064467767"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HhD-hv-hPG">
@@ -78,6 +127,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="placeholder" width="100" height="100"/>
+        <image name="clouds" width="960" height="676"/>
     </resources>
 </document>
