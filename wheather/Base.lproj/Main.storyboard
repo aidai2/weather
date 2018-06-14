@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" textLabel="IL0-g5-vMv" detailTextLabel="5Bs-fT-YdK" imageView="9bd-ER-9lD" style="IBUITableViewCellStyleSubtitle" id="Asc-Vg-CJY" customClass="WeatherTableViewCell" customModule="wheather" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" textLabel="IL0-g5-vMv" detailTextLabel="5Bs-fT-YdK" imageView="9bd-ER-9lD" style="IBUITableViewCellStyleSubtitle" id="Asc-Vg-CJY" customClass="WeatherCell" customModule="wheather" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Asc-Vg-CJY" id="x8W-85-n98">
@@ -47,8 +47,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="cityLabel" destination="IL0-g5-vMv" id="tch-d4-F73"/>
-                                    <outlet property="tempLabel" destination="5Bs-fT-YdK" id="XZx-vT-mYm"/>
+                                    <outlet property="cityLabel" destination="IL0-g5-vMv" id="6es-ZZ-DZw"/>
+                                    <outlet property="tempLabel" destination="5Bs-fT-YdK" id="fN7-fv-TAu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,7 +66,7 @@
         <!--View Controller-->
         <scene sceneID="5tU-15-Bj0">
             <objects>
-                <viewController id="VyY-AZ-TYM" customClass="ViewController" customModule="wheather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="VyY-AZ-TYM" customClass="ViewController" customModule="wheather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bH0-MQ-nn2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +102,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G5G-Vp-Vh1"/>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="1FO-A0-eec" id="fJ4-FA-ngZ"/>
+                        <outlet property="tempLAbel" destination="geN-vf-hut" id="VW1-dL-Mpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZY-kb-rB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,33 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-//    @IBOutlet weak var tempLabel: UILabel!
-//    @IBOutlet weak var cityLabel: UILabel!
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//
-//        
-//        if let p = Bundle.main.path(forResource: "weather", ofType: "json") {
-//
-//            do {
-//
-//                let json = try JSONDecoder().decode(Weather.self, from: Data(contentsOf: URL(fileURLWithPath: p), options: .mappedIfSafe))
-//
-//                let k = json.list[0].main.temp
-//                let c = k - 273
-//                tempLabel.text = "\(c)"
-//
-//                let city = json.city
-//                cityLabel.text = "\(city)"
-//
-//
-//            } catch {
-//
-//            }
-//
-//        }
-//    
-    }
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var tempLAbel: UILabel!
+    
+    var city = ""
+    var temp = 0.0
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+        cityLabel.text = city
+        tempLAbel.text = "\(temp)"
+   }
+}
