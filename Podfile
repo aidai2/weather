@@ -4,4 +4,5 @@ use_frameworks!
 target ‘wheather’ do
   pod 'SwiftyJSON'
   pod 'Alamofire'
+  pod 'SidebarOverlay'
 end

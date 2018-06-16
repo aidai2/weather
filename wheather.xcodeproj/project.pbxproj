@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		46A0781C53527B2C2E4D7D43 /* Pods_wheather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D78DD0F88FA0CAA373AB6BD /* Pods_wheather.framework */; };
+		84B1BFCE20D4F0BF003A6827 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1BFCD20D4F0BF003A6827 /* CityViewController.swift */; };
+		84B1BFD020D4F8EA003A6827 /* NameOfCityCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1BFCF20D4F8EA003A6827 /* NameOfCityCellTableViewCell.swift */; };
+		84B1BFD220D4FAAB003A6827 /* SecondWeatherTableViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1BFD120D4FAAB003A6827 /* SecondWeatherTableViewTableViewController.swift */; };
 		84B35A2320C7830700967073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B35A2220C7830700967073 /* AppDelegate.swift */; };
 		84B35A2820C7830700967073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B35A2620C7830700967073 /* Main.storyboard */; };
 		84B35A2A20C7830700967073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B35A2920C7830700967073 /* Assets.xcassets */; };
@@ -19,6 +22,11 @@
 		84E2FE8320D2470E002CC8E3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2FE8220D2470E002CC8E3 /* Weather.swift */; };
 		84E2FE8720D24A97002CC8E3 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2FE8620D24A97002CC8E3 /* WeatherCell.swift */; };
 		84E2FE8920D24D24002CC8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2FE8820D24D23002CC8E3 /* ViewController.swift */; };
+		84E2FE8F20D263C9002CC8E3 /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2FE8E20D263C9002CC8E3 /* SideViewController.swift */; };
+		84E2FE9320D26A70002CC8E3 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2FE9220D26A70002CC8E3 /* TopViewController.swift */; };
+		84E2FE9520D27C6A002CC8E3 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E2FE9420D27C6A002CC8E3 /* Second.storyboard */; };
+		84E2FE9720D27F8C002CC8E3 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2FE9620D27F8C002CC8E3 /* SideBar.swift */; };
+		84E2FE9A20D28007002CC8E3 /* SecondProject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E2FE9920D28007002CC8E3 /* SecondProject.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		2D78DD0F88FA0CAA373AB6BD /* Pods_wheather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wheather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B1BFCD20D4F0BF003A6827 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		84B1BFCF20D4F8EA003A6827 /* NameOfCityCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameOfCityCellTableViewCell.swift; sourceTree = "<group>"; };
+		84B1BFD120D4FAAB003A6827 /* SecondWeatherTableViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWeatherTableViewTableViewController.swift; sourceTree = "<group>"; };
 		84B35A1F20C7830700967073 /* wheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B35A2220C7830700967073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B35A2720C7830700967073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +68,11 @@
 		84E2FE8220D2470E002CC8E3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		84E2FE8620D24A97002CC8E3 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		84E2FE8820D24D23002CC8E3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84E2FE8E20D263C9002CC8E3 /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
+		84E2FE9220D26A70002CC8E3 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		84E2FE9420D27C6A002CC8E3 /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		84E2FE9620D27F8C002CC8E3 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		84E2FE9920D28007002CC8E3 /* SecondProject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondProject.storyboard; sourceTree = "<group>"; };
 		8BC5EC53FDD766DAD35D9A38 /* Pods-wheather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheather.release.xcconfig"; path = "Pods/Target Support Files/Pods-wheather/Pods-wheather.release.xcconfig"; sourceTree = "<group>"; };
 		9DD32F50923A611936BF7E38 /* Pods-wheather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wheather/Pods-wheather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +120,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		84B1BFCA20D4EE24003A6827 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84B1BFCD20D4F0BF003A6827 /* CityViewController.swift */,
+				84B1BFCF20D4F8EA003A6827 /* NameOfCityCellTableViewCell.swift */,
+				84B1BFD120D4FAAB003A6827 /* SecondWeatherTableViewTableViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		84B35A1620C7830600967073 = {
 			isa = PBXGroup;
 			children = (
@@ -129,11 +155,12 @@
 		84B35A2120C7830700967073 /* wheather */ = {
 			isa = PBXGroup;
 			children = (
+				84E2FE9820D27FEA002CC8E3 /* Second */,
+				84E2FE8B20D260CE002CC8E3 /* SideBar */,
+				84E2FE8A20D260BC002CC8E3 /* First */,
 				84E2FE8020D24699002CC8E3 /* weather.json */,
 				84E2FE8220D2470E002CC8E3 /* Weather.swift */,
-				84B35A5120C7869B00967073 /* VC */,
 				84B35A2220C7830700967073 /* AppDelegate.swift */,
-				84B35A2620C7830700967073 /* Main.storyboard */,
 				84B35A2920C7830700967073 /* Assets.xcassets */,
 				84B35A2B20C7830700967073 /* LaunchScreen.storyboard */,
 				84B35A2E20C7830700967073 /* Info.plist */,
@@ -167,6 +194,35 @@
 				84E2FE8820D24D23002CC8E3 /* ViewController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		84E2FE8A20D260BC002CC8E3 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				84B35A5120C7869B00967073 /* VC */,
+				84B35A2620C7830700967073 /* Main.storyboard */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		84E2FE8B20D260CE002CC8E3 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				84E2FE9420D27C6A002CC8E3 /* Second.storyboard */,
+				84E2FE8E20D263C9002CC8E3 /* SideViewController.swift */,
+				84E2FE9220D26A70002CC8E3 /* TopViewController.swift */,
+				84E2FE9620D27F8C002CC8E3 /* SideBar.swift */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
+		84E2FE9820D27FEA002CC8E3 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				84B1BFCA20D4EE24003A6827 /* VC */,
+				84E2FE9920D28007002CC8E3 /* SecondProject.storyboard */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +338,8 @@
 				84E2FE8120D24699002CC8E3 /* weather.json in Resources */,
 				84B35A2D20C7830700967073 /* LaunchScreen.storyboard in Resources */,
 				84B35A2A20C7830700967073 /* Assets.xcassets in Resources */,
+				84E2FE9520D27C6A002CC8E3 /* Second.storyboard in Resources */,
+				84E2FE9A20D28007002CC8E3 /* SecondProject.storyboard in Resources */,
 				84B35A2820C7830700967073 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,11 +384,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-wheather/Pods-wheather-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SidebarOverlay/SidebarOverlay.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SidebarOverlay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,10 +423,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E2FE8F20D263C9002CC8E3 /* SideViewController.swift in Sources */,
+				84B1BFCE20D4F0BF003A6827 /* CityViewController.swift in Sources */,
 				84E2FE8920D24D24002CC8E3 /* ViewController.swift in Sources */,
+				84B1BFD220D4FAAB003A6827 /* SecondWeatherTableViewTableViewController.swift in Sources */,
+				84E2FE9720D27F8C002CC8E3 /* SideBar.swift in Sources */,
 				84E2FE8720D24A97002CC8E3 /* WeatherCell.swift in Sources */,
+				84E2FE9320D26A70002CC8E3 /* TopViewController.swift in Sources */,
 				84B35A5320C786F400967073 /* WeatherTableViewController.swift in Sources */,
 				84E2FE8320D2470E002CC8E3 /* Weather.swift in Sources */,
+				84B1BFD020D4F8EA003A6827 /* NameOfCityCellTableViewCell.swift in Sources */,
 				84B35A2320C7830700967073 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
