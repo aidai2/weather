@@ -28,19 +28,19 @@ struct Main: Decodable {
 //2-
 
 struct Object: Decodable {
-    var cod: Int
+    var cod: String
     var message: Double
     var cnt: Int
-    var list: [List2]
+//    var list: [List2]
     var city: City
 }
 
-struct List2: Decodable {
-    var dt: Int
-    var main: Main2
-    var clouds: Clouds
-    var dt_txt: String
-}
+//struct List2: Decodable {
+//    var dt: Int
+//    var main: Main2
+//    var clouds: Clouds
+//    var dt_txt: String
+//    }
 
 struct City: Decodable {
     var id: Int

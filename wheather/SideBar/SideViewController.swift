@@ -11,7 +11,7 @@ import UIKit
 
 class SideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var projects = ["JSON", "Alamofire"]
+    var projects = ["JSON", "Alamofire", "Projects"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projects.count
@@ -35,6 +35,14 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 1:
             let sb = UIStoryboard(name: "SecondProject", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: "SecondWeatherTableViewController")
+            so_containerViewController?.topViewController = vc
+            so_containerViewController?.isSideViewControllerPresented = false
+            break
+            
+        case 2:
+            
+            let sb = UIStoryboard(name: "Second", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "top")
             so_containerViewController?.topViewController = vc
             so_containerViewController?.isSideViewControllerPresented = false
             break
