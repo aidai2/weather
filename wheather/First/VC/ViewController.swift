@@ -21,5 +21,7 @@ class ViewController: UIViewController {
 
         cityLabel.text = city
         tempLAbel.text = "\(temp)"
+        
+//        navigationController.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
    }
 }

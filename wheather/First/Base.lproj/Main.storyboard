@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Weather-->
+        <!--Погода-->
         <scene sceneID="Eqi-bc-Zgh">
             <objects>
                 <tableViewController storyboardIdentifier="WeatherTableViewController" id="ZT9-oI-7ys" customClass="WeatherTableViewController" customModule="wheather" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,21 +27,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IL0-g5-vMv">
-                                            <rect key="frame" x="93" y="5" width="33.5" height="20.5"/>
+                                            <rect key="frame" x="75" y="5" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.23471575980000001" green="0.35588482020000001" blue="0.42684942479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Bs-fT-YdK">
-                                            <rect key="frame" x="93" y="25.5" width="44" height="14.5"/>
+                                            <rect key="frame" x="75" y="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="clouds" id="9bd-ER-9lD">
-                                            <rect key="frame" x="16" y="0.0" width="62" height="43.5"/>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="cloud" id="9bd-ER-9lD">
+                                            <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -57,7 +57,7 @@
                             <outlet property="delegate" destination="ZT9-oI-7ys" id="tV6-8p-yad"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Weather" id="Q7P-ha-jwp"/>
+                    <navigationItem key="navigationItem" title="Погода" id="Q7P-ha-jwp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4UF-Rq-aRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,20 +74,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geN-vf-hut">
                                 <rect key="frame" x="155.5" y="318" width="64" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.40810783279985907" green="0.17034316961452117" blue="0.53888404187817263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FO-A0-eec">
                                 <rect key="frame" x="150.5" y="259.5" width="75.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" red="0.69630393401015223" green="0.48598851618176142" blue="0.64115016375662848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.23471575980000001" green="0.35588482020000001" blue="0.42684942479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="Iw1-Hu-ZGe">
-                                <rect key="frame" x="61.5" y="413" width="252" height="174"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudbig" translatesAutoresizingMaskIntoConstraints="NO" id="Iw1-Hu-ZGe">
+                                <rect key="frame" x="59.5" y="331" width="256" height="256"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="174" id="0hR-Lh-vKa"/>
-                                    <constraint firstAttribute="width" constant="252" id="bl8-xu-pxV"/>
+                                    <constraint firstAttribute="height" constant="256" id="0hR-Lh-vKa"/>
+                                    <constraint firstAttribute="width" constant="256" id="bl8-xu-pxV"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -116,8 +116,8 @@
             <objects>
                 <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="rZQ-FF-ag6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rJe-ey-99j">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rJe-ey-99j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -131,6 +131,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clouds" width="960" height="676"/>
+        <image name="cloud" width="128" height="128"/>
+        <image name="cloudbig" width="256" height="256"/>
     </resources>
 </document>

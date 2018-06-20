@@ -11,16 +11,25 @@ import UIKit
 
 class SideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var projects = ["JSON", "Alamofire", "Projects"]
+    var projects = ["JSON", "Alamofire", " Проекты"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return projects.count
     }
+    override func viewDidLoad() {
+        super.viewDidLoad()
     
+
+        
+    }
     
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = projects[indexPath.row]
+        cell.textLabel?.textColor = UIColor(red: 60.0/255, green: 91.0/255, blue: 109.0/255, alpha: 1.0)
+        
+//        cell.backgroundColor = UIColor(red:230.0/255 , green:230.0/255 , blue:230.0/255, alpha:0.1 )
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -52,11 +61,7 @@ class SideViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
+   
     
 
 
